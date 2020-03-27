@@ -1,0 +1,53 @@
+{
+	"folders": [
+
+		{
+			"path": "C:\\Program Files\\QGIS 3.12"
+		},
+		{
+			"path": "C:\\Program Files\\Python38"
+		}
+	],
+	"settings": {
+		"python.pythonPath": "C:\\Program Files\\QGIS 3.12\\apps\\Python37\\python.exe",
+		"editor.fontSize": 18,
+		"editor.wordWrap": "on",
+		"editor.wordWrapColumn": 60,
+		"terminal.integrated.env.windows": {
+			// Path
+			"PATH": "C:\\PROGRA~1\\QGIS3~1.12\\apps\\qgis\\bin;C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37;C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37\\Scripts;C:\\PROGRA~1\\QGIS3~1.12\\apps\\qt5\\bin;C:\\PROGRA~1\\QGIS3~1.12\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\WBem",
+			// Python
+			"PYTHONHOME": "C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37",
+			"PYTHONPATH": "C:\\PROGRA~1\\QGIS3~1.12\\apps\\qgis\\python;C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37;C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37\\Scripts",
+			// GDAL
+			"GDAL_DATA": "C:\\PROGRA~1\\QGIS3~1.12\\share\\gdal",
+			"GDAL_DRIVER_PATH": "C:\\PROGRA~1\\QGIS3~1.12\\bin\\gdalplugins",
+			"GDAL_FILENAME_IS_UTF8": "YES",
+			// GeoTIFF
+			"GEOTIFF_CSV": "C:\\PROGRA~1\\QGIS3~1.12\\share\\epsg_csv",
+			// Qt
+			"O4W_QT_BINARIES": "C:/PROGRA~1/QGIS3~1.12/apps/Qt5/bin",
+			"O4W_QT_DOC": "C:/PROGRA~1/QGIS3~1.12/apps/Qt5/doc",
+			"O4W_QT_HEADERS": "C:/PROGRA~1/QGIS3~1.12/apps/Qt5/include",
+			"O4W_QT_LIBRARIES": "C:/PROGRA~1/QGIS3~1.12/apps/Qt5/lib",
+			"O4W_QT_PLUGINS": "C:/PROGRA~1/QGIS3~1.12/apps/Qt5/plugins",
+			"O4W_QT_PREFIX": "C:/PROGRA~1/QGIS3~1.12/apps/Qt5",
+			"O4W_QT_TRANSLATIONS": "C:/PROGRA~1/QGIS3~1.12/apps/Qt5/translationss",
+			"QT_PLUGIN_PATH": "C:\\PROGRA~1\\QGIS3~1.12\\apps\\qgis\\qtplugins;C:\\PROGRA~1\\QGIS3~1.12\\apps\\qt5\\plugins",
+			"PROJ_LIB":"C:\\PROGRA~1\\QGIS3~1.12\\share\\proj",
+			// QGIS
+			"OSGEO4W_ROOT": "C:\\PROGRA~1\\QGIS3~1.12",
+			"QGIS_PREFIX_PATH": "C:/PROGRA~1/QGIS3~1.12/apps/qgis",
+			// Cache
+			"VSI_CACHE": "TRUE",
+			"VSI_CACHE_SIZE": "1000000",
+			"JPEGMEM":"1000000",
+			// Virtual Envoirment
+			"VIRTUAL_ENV": "C:\\Program Files\\Python38\\env_qgis",
+			"ENV_PROMPT":"(env_qgis)",
+			"PROMPT": "(Entorno Qgis) $P$G",
+			"PATH": "C:\\PROGRA~1\\QGIS3~1.12\\apps\\qgis\\bin;C:\\PROGRA~1\\QGIS3~1.12\\apps\\qgis\\bin;C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37;C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37\\Scripts;C:\\PROGRA~1\\QGIS3~1.12\\apps\\qt5\\bin;C:\\PROGRA~1\\QGIS3~1.12\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\WBem",
+			"PYTHONPATH":"C:\\PROGRA~1\\QGIS3~1.12\\apps\\qgis\\python;C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37;C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37\\Scripts"
+		}
+	},
+}

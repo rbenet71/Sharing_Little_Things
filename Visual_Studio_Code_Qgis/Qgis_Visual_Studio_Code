@@ -1,0 +1,17 @@
+Here I explain how configure Visual Studio Code for running alone scripts in Python that executes funcions of Qgis.
+
+In the file "Visual_Studio_Code_Qgis\Work_Space_Configuration.code-workspace" is my file configuration that set the envoirment of operatig system.
+
+With this configuration if you run your aplication from Visual Studio code there will be no errors with Python and Qgis.
+
+For use this information:
+    1.- Goto to the configuration of workspace (Control+)
+    2.- Select workspace
+    3.- In right upper square click to Open Configuration Json
+    4.- Paste my code insight changing Directories.
+
+In my configuration file I have a envoirment, if you don't want or don't have, delete the last lines.
+
+This do the same like file "C:\Program Files\QGIS 3.12\bin\python-qgis.bat".
+
+So if you run this file in CMD, and after that in the same CMD window, you write "set" and enter, you will have a list with the configuration of your system.
