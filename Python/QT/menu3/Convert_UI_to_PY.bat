@@ -1,0 +1,1 @@
+pyuic5 -o window_qt.py window_qt.ui
