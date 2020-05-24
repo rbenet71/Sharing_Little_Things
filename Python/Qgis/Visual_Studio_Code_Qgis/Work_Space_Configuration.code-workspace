@@ -9,16 +9,15 @@
 		}
 	],
 	"settings": {
+		// This is for not problem with imports in VS Code 
+		"python.autoComplete.extraPaths": ["C:/Roberto/Visual_Studio_Code/GisBike/programa;C:\\PROGRA~1\\QGIS3~1.12\\apps\\qgis\\python;C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37;C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37\\Scripts"],
 		"python.pythonPath": "C:\\Program Files\\QGIS 3.12\\apps\\Python37\\python.exe",
 		"editor.fontSize": 18,
 		"editor.wordWrap": "on",
 		"editor.wordWrapColumn": 60,
 		"terminal.integrated.env.windows": {
-			// Path
-			"PATH": "C:\\PROGRA~1\\QGIS3~1.12\\apps\\qgis\\bin;C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37;C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37\\Scripts;C:\\PROGRA~1\\QGIS3~1.12\\apps\\qt5\\bin;C:\\PROGRA~1\\QGIS3~1.12\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\WBem",
-			// Python
-			"PYTHONHOME": "C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37",
-			"PYTHONPATH": "C:\\PROGRA~1\\QGIS3~1.12\\apps\\qgis\\python;C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37;C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37\\Scripts",
+
+			
 			// GDAL
 			"GDAL_DATA": "C:\\PROGRA~1\\QGIS3~1.12\\share\\gdal",
 			"GDAL_DRIVER_PATH": "C:\\PROGRA~1\\QGIS3~1.12\\bin\\gdalplugins",
@@ -46,7 +45,11 @@
 			"VIRTUAL_ENV": "C:\\Program Files\\Python38\\env_qgis",
 			"ENV_PROMPT":"(env_qgis)",
 			"PROMPT": "(Entorno Qgis) $P$G",
-			"PATH": "C:\\PROGRA~1\\QGIS3~1.12\\apps\\qgis\\bin;C:\\PROGRA~1\\QGIS3~1.12\\apps\\qgis\\bin;C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37;C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37\\Scripts;C:\\PROGRA~1\\QGIS3~1.12\\apps\\qt5\\bin;C:\\PROGRA~1\\QGIS3~1.12\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\WBem",
+
+			// Path			
+			"PATH": "C:\\PROGRA~1\\QGIS3~1.12\\apps\\qgis\\bin;C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37;C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37\\Scripts;C:\\PROGRA~1\\QGIS3~1.12\\apps\\qt5\\bin;C:\\PROGRA~1\\QGIS3~1.12\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\WBem",
+			// Python
+			"PYTHONHOME": "C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37",
 			"PYTHONPATH":"C:\\PROGRA~1\\QGIS3~1.12\\apps\\qgis\\python;C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37;C:\\PROGRA~1\\QGIS3~1.12\\apps\\Python37\\Scripts"
 		}
 	},
