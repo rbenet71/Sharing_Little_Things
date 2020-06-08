@@ -17,14 +17,18 @@ class gpx_to_3d(QDialog):
 
     # Open Qgis Aplication, for using his function
     # I think there is a better way to start, but by the moment I don't know how    
-    QgsApplication.setPrefixPath('/usr', True)
-    qgs = QgsApplication([], False)
-    qgs.initQgis()
+    #QgsApplication.setPrefixPath('/usr', True)
+    #qgs = QgsApplication([], False)
+    #qgs.initQgis()
     
     # Initialize window and create Graphic User Interface
     def __init__(self):
         super().__init__() 
         self.setWindowTitle("GPX TO 3D")
+        #QgsApplication.setPrefixPath('/usr', True)
+        #self.qgs = QgsApplication([], False)
+        #self.qgs.initQgis()
+    
         
         # File to show in map
         self.Output_KML_File='C:/Roberto/Visual_Studio_Code/Sharing_Little_Things/Python/Qgis/GPX 3D/2019_E6_V8.gpx'
@@ -93,7 +97,9 @@ class gpx_to_3d(QDialog):
             uri="dpiMode=7&identifier=mdt:Elevacion4258_200&url=http://www.ign.es/wcs/mdt"
         else:
             uri="dpiMode=7&identifier=mdt:Elevacion4258_25&url=http://www.ign.es/wcs/mdt"
+        
         DEM  = QgsRasterLayer(uri, 'my wcs layer', 'wcs')
+                  
         if not DEM.isValid():
             self.info("DEM failed to load!")
         else:
@@ -441,9 +447,11 @@ if __name__ == "__main__":
     
     # Create Screen and Function Class
     window = gpx_to_3d()
+    #window2 = see_map('C:/Roberto/Visual_Studio_Code/Sharing_Little_Things/Python/Qgis/GPX 3D/2019_E6_V8.gpx')
     
     # Show Create Window
     window.show()
+    #window2.show()
     
     # Loop program
     sys.exit(app.exec_())
