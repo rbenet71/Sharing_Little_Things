@@ -91,15 +91,19 @@ class gpx_to_3d(QDialog):
         # Set parameters to load the Digital Elevation Model of IGN
         if self.comboBox.currentIndex()==3:
             uri="dpiMode=7&identifier=mdt:Elevacion4258_1000&url=http://www.ign.es/wcs/mdt"
+            uri2="dpiMode=7&identifier=Elevacion4258_1000&url=http://servicios.idee.es/wcs-inspire/mdt?version%3D1.1.2"
         elif self.comboBox.currentIndex()==2:
             uri="dpiMode=7&identifier=mdt:Elevacion4258_500&url=http://www.ign.es/wcs/mdt"
+            uri2="dpiMode=7&identifier=Elevacion4258_500&url=http://servicios.idee.es/wcs-inspire/mdt?version%3D1.1.2"
         elif self.comboBox.currentIndex()==1:
             uri="dpiMode=7&identifier=mdt:Elevacion4258_200&url=http://www.ign.es/wcs/mdt"
+            uri2="dpiMode=7&identifier=Elevacion4258_200&url=http://servicios.idee.es/wcs-inspire/mdt?version%3D1.1.2"
         else:
             uri="dpiMode=7&identifier=mdt:Elevacion4258_25&url=http://www.ign.es/wcs/mdt"
+            uri2="dpiMode=7&identifier=Elevacion4258_25&url=http://servicios.idee.es/wcs-inspire/mdt?version%3D1.1.2"
         
         DEM  = QgsRasterLayer(uri, 'my wcs layer', 'wcs')
-                  
+       
         if not DEM.isValid():
             self.info("DEM failed to load!")
         else:
@@ -128,8 +132,14 @@ class gpx_to_3d(QDialog):
         for point in self.points.getFeatures():
             # Get Geometry of feature like a point
             geompt = point.geometry().asPoint()
-            # Find this point in DEM and return his elevation
-            elevation = DEM.dataProvider().identify(geompt, QgsRaster.IdentifyFormatValue).results()
+            if not DEM.isValid():
+                if self.file_name[-3:]=='kml':
+                    elevation=[0,0]
+                else:
+                    elevation=[point['ele'],point['ele']]
+            else:                   
+                # Find this point in DEM and return his elevation
+                elevation = DEM.dataProvider().identify(geompt, QgsRaster.IdentifyFormatValue).results()
             
             #print (elevation[1],point['ele'])
             # Get Value of original point (y - Latitude, x - Longitude)
