@@ -1,0 +1,1 @@
+pyinstaller --clean --onefile -c -y Ocr_Garmin_DashCam.spec
