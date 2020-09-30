@@ -1,0 +1,15 @@
+*.pyc
+Makefile
+*.log
+help/
+i18n/
+.idea/
+.idea/*
+.DS_Store
+snapshots/*
+tmp/
+tmp/*
+snapshots/
+snapshots/*
+*~
+tmp.geojson
